@@ -1,0 +1,28 @@
+span.blackColor{
+    color:rgb(0, 0, 0);
+    font-family:arial;
+    font-size:14px;
+}
+span.brownColor{
+    color:brown;
+    font-family:arial;
+    font-size:18px;
+}
+#homepageid{
+    color:red;
+    font-family:arial;
+    font-size:20px;
+    text-decoration: none;
+}
+#secondpageid{
+    color:blue;
+    font-family:arial;
+    font-size:20px;
+    text-decoration: none;
+}
+#thirdpageid{
+    color:yellow;
+    font-family:arial;
+    font-size:20px;
+    text-decoration: none;
+}
