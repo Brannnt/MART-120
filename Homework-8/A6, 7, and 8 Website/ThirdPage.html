@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>ThirdPage</title>
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            let nameInput = document.getElementById("Name");
+            let emailInput = document.getElementById("email");
+
+            if (nameInput.value === "") {
+                nameInput.style.backgroundColor = "red";
+                nameInput.focus();
+                return;
+            }
+            if (emailInput.value === "") {
+                emailInput.style.backgroundColor = "red";
+                emailInput.focus();
+                return;
+            }
+
+            alert("Thank you for your info");
+            event.target.submit();
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Third page of Brannt's website!</h1>
+    <h3>Here, you can contact the man himself. But you will need to fill out some information first!</h3>
+        
+    <form action="ThirdPage.html" type="POST" onsubmit="handleSubmit(event)">
+        Name (First and Last): <input type="text" id="Name" required title="This part is required"><br>
+        Email Address: <input type="text" id="email" required title="This part is required"><br>
+    
+        <label for="termsandservicesyes">Terms and Services Agreement (agree pls)</label><br>
+        <input type="checkbox" id="termsandservicesyes" name="termsandservicesyes" value="termsandservicesyes" required title="This part is required">Yes!
+    
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    <ul>
+        <li><a href="SecondPage.html">Second Page</a></li>
+        <li><a href="homepage.html">Home Page</a></li>
+    </ul>
+    
+</body>
+</html>
