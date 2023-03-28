@@ -5,6 +5,8 @@
     function draw()
     {
         background (120);  
+        textSize(28);
+        text('Brannt Fahrney', 400, 580);
         fill(255,204,0);
         circle(300,200,200);
         fill(1000)
@@ -24,4 +26,5 @@
         triangle(225,500,270,500,230,550);
         triangle(375,500,330,500,370,550);
         Point(300,300);
+
     }
